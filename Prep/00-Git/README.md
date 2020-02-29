@@ -1,6 +1,6 @@
 # Git - Intro
 
-![Git](../img/gitLogo.png)
+![Git](./img/gitLogo.png)
 
 Git es un _sistema de control de versión_ diseñado para trackear cambios en archivos digitales y coordinar el trabajo realizado sobre esos archivos en un equipo de personas. Su mayor uso es para el desarrollo de software, aunque también es utilizado para trackear archivos de otros tipos.
 
@@ -14,14 +14,14 @@ Hay varios tipos de sistemas de versionado, estos puedes ser:
 
 ### Locales
 
-![Local](../img/local.png)
+![Local](./img/local.png)
 
 Un sistema de versionado local, automatiza  la tarea de ordenar, copiar y tagear todas las modificaciones de archivos que vayamos haciendo. Imaginense que están trabajando con código, y ustedes mismos van copiando y guardando los archivos en otra carpeta cada vez que lo mofican, y ponen un nombre indicando la fecha y la hora del cambios, este mismo proceso, pero automatizado, es un _VCS local_.
 Como se puden imaginar, este sistema funciona _bien_ para trabajar solos, pero si queremos incorporar otra gente al equipo van a empezar a surgir problemas.
 
 ### Centralizados
 
-![Centralizado](../img/centralizado.png)
+![Centralizado](./img/centralizado.png)
 
 Para solventar este problema, se desarrollaron los sistemas de control de versiones centralizados (_Centralized Version Control Systems_ o __CVCSs__ en inglés). Estos sistemas, como __CVS__, __Subversion__, y __Perforce__, tienen un único servidor que contiene todos los archivos versionados, y varios clientes que descargan los archivos desde ese lugar central. Durante muchos años éste ha sido el estándar para el control de versiones.
 
@@ -29,7 +29,7 @@ Este sistema ofrece varias ventajas, como por ejemplo: Todo el mundo puede saber
 
 ### Distribuido
 
-![Distribuido](../img/distribuido.png)
+![Distribuido](./img/distribuido.png)
 
 Es aquí donde entran los sistemas de control de versiones distribuidos (_Distributed Version Control Systems_ o __DVCSs__ en inglés). En un DVCS (como __Git__, __Mercurial__, __Bazaar__ o __Darcs__), los clientes no sólo descargan la última instantánea de los archivos: replican completamente el repositorio. Así, si un servidor muere, y estos sistemas estaban colaborando a través de él, cualquiera de los repositorios de los clientes puede copiarse en el servidor para restaurarlo.
 
@@ -51,7 +51,7 @@ Desde su nacimiento en 2005, Git ha evolucionado y madurado para ser fácil de u
 
 Git modela sus datos más como un conjunto de instantáneas de un mini sistema de archivos. Cada vez que confirmas un cambio, o guardas el estado de tu proyecto en Git, él básicamente hace una foto del aspecto de todos tus archivos en ese momento, y guarda una referencia a esa instantánea. Para ser eficiente, si los archivos no se han modificado, Git no almacena el archivo de nuevo, sólo un enlace al archivo anterior idéntico que ya tiene almacenado.
 
-![snapshots](../img/snapshots.png)
+![snapshots](./img/snapshots.png)
 
 La mayoría de las operaciones en Git sólo necesitan archivos y recursos locales para operar. Por lo general no se necesita información de ningún otro ordenador de tu red. Como tienes toda la historia del proyecto ahí mismo, en tu disco local, la mayoría de las operaciones parecen prácticamente inmediatas (con otros sistemas el proceso involucra llamados por red, que generan retardos importantes).
 
@@ -76,7 +76,7 @@ Git tiene tres estados principales en los que se pueden encontrar tus archivos:
 * __modified__: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos. 
 * __staged__: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima commiteada.
 
-![Estados](../img/estados.png)
+![Estados](./img/estados.png)
 
 Hay un archivo simple, generalmente contenido en tu directorio de Git, llamado que almacena información acerca de lo que va a ir en tu próxima confirmación, al contenido de este archivo, o al archivo mismo se lo conoce como __staging area__.
 
