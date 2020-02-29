@@ -4,6 +4,14 @@
 
 # Henry
 
+## [Módulo 0 - Bootcamp Prep ](./Prep)
+
+- Intro Internet
+- HTML
+- CSS
+- Git
+- JavaScript 
+
 ## [Módulo I - Foundations ](./M1)
 
 - Intro CS
