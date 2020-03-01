@@ -8,9 +8,12 @@
 * [HTML](./Lesson02-HTML)
 * [CSS](./Lesson03-CSS-Positioning)
 * JS:
-    - [I](./Lesson04-JS-I)
-    - [II](./Lesson05-JS-II)
-    - [III](./Lesson06-JS-III)
-    - [IV](./Lesson07-JS-IV)
-    - [V](./Lesson08-JS-V)
-    - [VI](./Lesson09-JS-VI)
+    - [I - Introducción a Javascript](./Lesson04-JS-I)
+    - [II- Flujos de control, operadores de comparación, bucles for](./Lesson05-JS-II)
+    - [III - continuación de bucles for y Arrays](./Lesson06-JS-III)
+    - [IV - Objetos](./Lesson07-JS-IV)
+    - [V - Clases y prototype](./Lesson08-JS-V)
+    - [VI - Callbacks](./Lesson09-JS-VI)
+* Checkpoint
+
+>> El **Checkpoint** consiste en un ejercicio que integra todo este contenido, va a ser individual y van a tener un día completo para terminarlo. Para continuar con la carrera es necesario aprobar este Checkpoint.
