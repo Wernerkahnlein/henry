@@ -21,6 +21,10 @@ Dificultad:
 		+ Calcular el promedio.
 		+ Calcular la Varianza y la desviación standard  :no_mouth:.
 
+## Sets
+
+* Creá tu propia estructura de datos que tenga la misma funcionalidad que la clase Sets de javascript.
+
 ## Pilas
 
 1. Vamos a implementar pilas en Javascript:
@@ -32,8 +36,6 @@ Dificultad:
 	+ Asegurate de saber en todo momento cuantos elementos hay en la pila.
 	+ Usá la pila para revertir un arreglo.
 
-
-## Colas
 
 ## Listas enlazadas
 
@@ -56,6 +58,13 @@ Dificultad:
 	+ find(value): Buscar un elemento de la lista por el dato.
 	+ next(): Avanza el puntero a la siguiente posición.
 	+ past(): Retrocede el puntero a la posición anterior.
+	
+## Colas
+
+1. Implementar el modelo de Cola con las siguientes operacion
+	+ enqueue(): Agrega un valor a la cola,respeta el orden existente
+	+ dequeue(): remueve un valor de la cola, obedece a FIFO (first in first out) y respeta el underflow 
+	+ size(): Devuelve el numero de elementos en la cola
 
 ## Árboles
 
@@ -83,6 +92,8 @@ Dificultad:
 1. Implementa pilas sin utilizar arreglos ni listas enlazadas.
 
 ## Colas
+
+1.Implementar sin usar los metodos `push`/`pop`/`shift`/`unshift`, ni ningun otro metodo del `Array.prototype`, ni `.length`. Puedes usar un objecto o un arreglo para guardar tu data y mantener un `head` y `tail` como puntero que cambia cuando funciones como `enqueue` y `dequeue` son llamadas.
 
 ## Listas enlazadas
 
@@ -114,10 +125,6 @@ Dificultad:
 ## Arreglos
 
 * Creá tu propia estructura de datos que tenga la misma funcionalidad que la clase Array de javascript.
-
-## Sets
-
-## Colas
 
 ## Listas enlazadas
 
