@@ -82,15 +82,27 @@ y presiona Enter. ¡Felicitaciones, has creado un directorio!
 
 Como mencionamos antes, Github es un lugar central para almacenar, ver y descargar repositorios, no es un sinónimo de "git". Necesitas tener una cuenta en Github para completar los siguientes ejercicios.
 
-### Forking ("bifurcar")
+### Crear un Repo
 
-Github.com permite a los usuarios a crear sus propias copias de un repositorio (siempre que sea público) y trabajar o modificar ese repositorio como quieras bajo tu propia cuenta. Esto se llama "Forking". Esencialmente, esto creará una nueva rama del repositorio, y en el futuro te permitirá reincorporar ("pull") los cambios que hayas hecho en esa rama en la rama master de la cual "forkeaste".
+Entra a github.com y logeate con tu usario. Luego en la parte de arriba a la derecha buscá el signo '+' y elegí 'new repository'.
 
-Para "forkear" un repo, puedes visitar el repositorio que quieras (para este ejercicio usaremos [este](https://github.com/atralice/caronte/) repo). En cualquier lugar dentro del repo, verás el botón "Fork" en la esquina superior derecha, haz click. Github copiará toda la información del repositorio a tu cueta y ya estará disponible para que trabajes en ella.
+![alt](../img/repo-create.png)
+
+En la nueva pantalla, vas a tener que seleccionar el nombre de tu nuevo repo. Crea un repo que se llame: `henry`. Podés agregarle una descripción también, pero no es obligatoria.
+
+![alt](../img/create-repository-name.png)
+
+Luego elegí la visibilidad del proyecto como público (para tener repos privados tenes que pagar el premium de github).
+
+Finalmente deseleccioná la opción: `Inicializar este repositorio con un README`.  Si lo tenés seleccionado va a aparecer un archivo vació llamado `README.md`, este archivo sirve para escribir una descripción más detallada del proyecto.
+
+Por último haz clic en **Crear repositorio**.
+
+Listo ya tenes tu propio repo. Ahora vas a poder clonarlo con las intrucciones de más abajo.
 
 ### Clonar
 
-Para poder trabajar en un proyecto debes clonarlo (descargarlo) a tu máquina local. Para ello, accede a la carpeta de nivel superior del repositorio que forkeaste en tu cuenta, y haz click en el botón verde de la esquina superior derecha que dice "Clonar o descargar". Un dropdown aparecerá y podemos clickear en el icono del clipboard para copiar la dirección del repo. (Nota: Puedes descargar el repositorio completo, pero no se recomienda tanto como clonarlo dado que este último realizará unos pasos extra que harán tu vida mucho más fácil).
+Para poder trabajar en un proyecto debes clonarlo (descargarlo) a tu máquina local. Para ello, accede a la carpeta de nivel superior del repositorio que creaste en tu cuenta, y haz click en el botón verde de la esquina superior derecha que dice "Clonar o descargar". Un dropdown aparecerá y podemos clickear en el icono del clipboard para copiar la dirección del repo. (Nota: Puedes descargar el repositorio completo, pero no se recomienda tanto como clonarlo dado que este último realizará unos pasos extra que harán tu vida mucho más fácil -> si lo descargas en vez de clonar, vas a tener que inicializar el repo vos mismo, no se preocupen por esto ahora).
 
 Una vez tengas la dirección copiada, vuelve a tu terminal y escribe lo siguiente:
 
@@ -178,11 +190,6 @@ La terminal te preguntará tu usuario y contraseña. Escribimos estos datos y a 
 
 ¡Felicitaciones, acabas de subir tu primer git commit!
 
-## Pull Requests
-
-Una vez hayas completado los cambios que deseabas realizar, es hora de "mergear" esos cambios con la rama master. Si no estás haciendo cambios en tu propio repositorio, vas a necesitar enviar una "Pull Request" o "PR", como nos referiremos a esta acción. Esto permite al dueño (o administrador, supervisor, líder de área o desarrollador senior) del repositorio original a ver y comprobar los cambios hechos y decidir si desea incluirlos en su master.
-
-En este ejercicio, enviaremos un PR a través de github.com
 
 **_TODO_:** Completar esta sección.
 

@@ -47,7 +47,7 @@ III. Cree una hoja de estilo externa y mueva todas nuestras reglas de estilo ant
 ```
 
 ```
-IV. Suba su trabajo a su cuenta de github.
+IV. Suba su trabajo a su cuenta de github, en la carpeta `/Precourse/Leccion02-Git/`
 ```
 
 Crédito adicional:
@@ -72,6 +72,9 @@ Usando lo que aprendiste de HTML vas a crear un documento nuevo llamado 'cv.html
 * Hobbies
 
 Además agregá una sección más donde expliques porque estás estudiando esta carrera y cuales son tus expectativas al finalizar la carrera.
+
+Suba tambien este archivo a su cuenta de github en`/Precourse/Leccion02-Git/`
+
 ```
 
 >> Para este ejercicio vos vas a tener que elegir que **tags** html usar para darle la mejor estructuración al html. Acordate que en el futuro vamos a usar este ejercicio para agregarle CSS, por ahora no te preocupes del layout, solamente de reglas básicas.
