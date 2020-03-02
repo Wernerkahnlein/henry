@@ -49,6 +49,16 @@ assert.ok((stdValue - 26.392233706149238) < 0.1, 'Std Deviation no coincide');
 var stdValue = variance(array);
 assert.ok((stdValue - 696.55) < 0.1, 'Variance Deviation no coincide');
 
+// # Cola
+var queue = new Queue();
+assert.equal(queue.size(),0,'El valor tiene que ser 0');
+queue.enqueue('first');
+queue.enqueue('second');
+queue.enqueue('third');
+assert.equal(queue.size(),3,'El valor tiene que ser 3');
+queue.dequeue();
+assert.equal(queue.size(),2,'El valor tiene que ser 3');
+
 // # Pilas
 
 var stack = new Pila();
