@@ -70,7 +70,7 @@ function menosQueNoventa(num) {
 }
 
 function mayorQueCincuenta(num) {
-  // Devuelve "true" si el argumento de la función "num" es mayor que noventa
+  // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
 }
@@ -92,25 +92,19 @@ function esImpar(num) {
   // Tu código:
 }
 
-// TODO
-// Check this
-function square(num) {
-  // square num and return the new value
-  // hint: NOT square root!
+function elevarAlCuadrado(num) {
+  // Devuelve el valor de "num" elevado al cuadrado
+  // ojo: No es raiz cuadrada!
   // Tu código:
 }
 
-// TODO
-// Check this
-function cube(num) {
-  // cube num and return the new value
+function elevarAlCubo(num) {
+  // Devuelve el valor de "num" elevado al cubo
   // Tu código:
 }
 
-// TODO
-// Check this
-function raiseToPower(num, exponent) {
-  // raise num to whatever power is passed in as exponent
+function elevar(num, exponent) {
+  // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
 }
 
@@ -120,12 +114,12 @@ function redondearNumero(num) {
 }
 
 function redondearHaciaArriba(num) {
-  // redondear "num" hacia arriba y devuélvelo
+  // Redondea "num" hacia arriba y devuélvelo
   // Tu código:
 }
 
 function agregarSimboloExclamacion(str) {
-  // Agrega un símbolo de exclamación al final de la string "str" y devuvle una nueva string
+  // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
 }
@@ -142,9 +136,8 @@ function obtenerSaludo(nombre) {
   // Tu código:
 }
 
-// Check this
 function obtenerAreaRectangulo(alto, ancho) {
-  // retornar el area de un cuadrado teniendo su altura y ancho
+  // Retornar el area de un cuadrado teniendo su altura y ancho
   // Tu código:
 }
 
@@ -171,9 +164,9 @@ module.exports = {
   obtenerResto,
   esPar,
   esImpar,
-  square,
-  cube,
-  raiseToPower,
+  elevarAlCuadrado,
+  elevarAlCubo,
+  elevar,
   redondearNumero,
   redondearHaciaArriba,
   agregarSimboloExclamacion,
