@@ -10,7 +10,7 @@ En esta lección cubriremos:
 
 ## Introducción al posicionamiento
 
-Armar un layout y hacer que todo se vea limpio es lo que la mayoría de gente espera hacer cuando empiezan a aprender CSS. Posicionar elementos HTML en la página con CSS es posiblemente la habilidad más poderosa que tiene CSS, aunque también puede ser la más frustrante. En esta lección aprenderemos distintas formas de posicionar elementos en la página.
+Armar un layout y hacer que todo se vea limpio es lo que la mayoría de gente espera hacer cuando empiezan a aprender CSS. Posicionar elementos HTML en la página con CSS es posiblemente la habilidad más poderosa que tiene CSS, aunque también puede ser la más **frustrante**. En esta lección aprenderemos distintas formas de posicionar elementos en la página.
 
 ## La propiedad "display"
 
@@ -110,7 +110,7 @@ Si lo quisiésemos 10 píxeles debajo del límite superior y 10 píxeles del bor
 
 ## Introducción a Flexbox
 
-Introducido en CSS3, Flexbos es una nueva e interesante característica. La misma nos permite posicionar nuestros elementos en relación a su _parent_ y entre ellos. Ya no necesitamos aplicar "hacks" para cosas como centrar elementos. Esto nos permite que el diseño "mobile-friendly" sea excelente y nos hace dedicar menos tiempo tratando de posicionar elementos como corresponde. Flexbox se puede complicar muy rápido, pero coveremos los aspectos básicos a continuación.
+Introducido en CSS3, Flexbos es una nueva e interesante característica. La misma nos permite posicionar nuestros elementos en relación a su _parent_ y entre ellos. Ya no necesitamos aplicar "hacks" para cosas como centrar elementos. Esto nos permite que el diseño "mobile-friendly" sea excelente y nos hace dedicar menos tiempo tratando de posicionar elementos como corresponde. Flexbox se puede complicar muy rápido, pero veremos los aspectos básicos a continuación.
 
 ### "display: flex" e "inline-flex"
 
@@ -154,6 +154,7 @@ Por último, cubriremos una propiedad más avanzada llamada "align-self". La mis
 ## Recursos adicionales
 
 * [Flexbox Froggy ](http://flexboxfroggy.com/) (un excelente tutorial sobre flexbox)
+* [Conceptos básicos de FlexBox](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Conceptos_Basicos_de_Flexbox)
 * [CSS tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 * [MDN: CSS display propery](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
