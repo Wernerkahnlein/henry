@@ -1,34 +1,33 @@
 /* eslint-disable no-undef */
 const {
-    nuevaString,
-    nuevoNum,
-    nuevoBool,
-    newSubtract,
-    newMultiply,
-    nuevoModulo,
-    devolverString,
-    tienenMismaLongitud,
-    sonIguales,
-    menosQueNoventa,
-    mayorQueCincuenta,
-    suma,
-    resta,
-    divide,
-    multiplica,
-    obtenerResto,
-    esPar,
-    esImpar,
-    square,
-    cube,
-    raiseToPower,
-    redondearNumero,
-    redondearHaciaArriba,
-    agregarSimboloExclamacion,
-    combinarNombres,
-    obtenerSaludo,
-    getRectangleArea,
-    getTriangleArea
-} = require('../homework');
+  nuevaString,
+  nuevoNum,
+  nuevoBool,
+  nuevaResta,
+  nuevaMultiplicacion,
+  nuevoModulo,
+  devolverString,
+  tienenMismaLongitud,
+  sonIguales,
+  menosQueNoventa,
+  mayorQueCincuenta,
+  suma,
+  resta,
+  divide,
+  multiplica,
+  obtenerResto,
+  esPar,
+  esImpar,
+  square,
+  cube,
+  raiseToPower,
+  redondearNumero,
+  redondearHaciaArriba,
+  agregarSimboloExclamacion,
+  combinarNombres,
+  obtenerSaludo,
+  obtenerAreaRectangulo,
+} = require('../homework.js');
 
 describe('nuevaString', function() {
   it('should be a string', function() {
@@ -228,21 +227,10 @@ describe('obtenerSaludo(name)', function() {
   });
 });
 
-// TODO
-// Check this
-/*
-describe('getRectangleArea(length, width)', function() {
-  it('should return the correct area', function() {
-    expect(getRectangleArea(2, 2)).toBe(4);
-    expect(getRectangleArea(3, 6)).toBe(18);
-    expect(getRectangleArea(0, 2)).toBe(0);
+describe('obtenerAreaRectangulo(alto, ancho)', function() {
+  it('deberia retornar el area correcta', function() {
+    expect(obtenerAreaRectangulo(2, 2)).toBe(4);
+    expect(obtenerAreaRectangulo(3, 6)).toBe(18);
+    expect(obtenerAreaRectangulo(0, 2)).toBe(0);
   });
 });
-
-describe('getTriangleArea(base, height)', function() {
-  it('should return the correct area', function() {
-    expect(getTriangleArea(2, 2)).toBe(2);
-    expect(getTriangleArea(0, 2)).toBe(0);
-  });
-});
-*/

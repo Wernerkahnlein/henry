@@ -142,19 +142,12 @@ function obtenerSaludo(nombre) {
   // Tu código:
 }
 
-// TODO
 // Check this
-function getRectangleArea(length, width) {
-  // return the area of the rectangle by using length and width
+function obtenerAreaRectangulo(alto, ancho) {
+  // retornar el area de un cuadrado teniendo su altura y ancho
   // Tu código:
 }
 
-// TODO
-// Check this
-function getTriangleArea(base, height) {
-  // return the area of the triangle by using base and height
-  // Tu código:
-}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -163,8 +156,8 @@ module.exports = {
   nuevaString,
   nuevoNum,
   nuevoBool,
-  newSubtract,
-  newMultiply,
+  nuevaResta,
+  nuevaMultiplicacion,
   nuevoModulo,
   devolverString,
   tienenMismaLongitud,
@@ -186,6 +179,5 @@ module.exports = {
   agregarSimboloExclamacion,
   combinarNombres,
   obtenerSaludo,
-  getRectangleArea,
-  getTriangleArea
+  obtenerAreaRectangulo,
 };
