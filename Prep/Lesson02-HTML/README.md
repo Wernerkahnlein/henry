@@ -29,7 +29,7 @@ HTML define una serie de elementos (o etiquetas, o tags) que serviran para delim
   </element>
 ```
 
-![alt text](./img/html.jpg)
+![alt text](../img/html.jpg)
 
 
 Algunos tags html, por su naturaleza, no necesitan tener nada *adentro*. Por lo tanto podemos abreviar su escritura y en vez de abrir y cerrar el tag, simplemente agregamos un "/" antes del bracket final.
@@ -235,7 +235,7 @@ Cons:
 
 Para poder aplicar reglas de estilo a los elementos html, necesitamos una forma de saber cómo seleccionar los elementos a los que deseamos aplicar las reglas, para esto sirven los *selectores CSS*.
 
-![alt text](./img/css-declaration-small.png)
+![alt text](../img/css-declaration-small.png)
 
 Hay varios tipos de selectores, los más básicos son los de tipo, donde indicamos a qué clase de elemntos se van a aplicar las reglas, el ejemplo de arriba usa un selector de tipo. Está diciendo: *aplicarle a todos los elementos de tipo <p\/> la regla de texto color rojo*.
 
