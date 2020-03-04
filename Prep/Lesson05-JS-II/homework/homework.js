@@ -12,7 +12,7 @@ function saludo(idioma) {
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
   // Si "idioma" es "ingles", devuelve "Hello!"
-  // Si "idioma" es `undefined` devuelve "Hola!"
+  // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
 }
 
@@ -39,9 +39,9 @@ function esEntero(numero) {
 }
 
 function fizzBuzz(numero) {
-  // Si "numero" es divisivle entre 3, devuelve "fizz"
-  // Si "numero" es divisivle entre 5, devuelve "buzz"
-  // Si "numero" es divisivle entre 3 y 5 (ambos), devuelve "fizzbuzz"
+  // Si "numero" es divisible entre 3, devuelve "fizz"
+  // Si "numero" es divisible entre 5, devuelve "buzz"
+  // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
 }
 
