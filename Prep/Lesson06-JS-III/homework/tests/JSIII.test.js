@@ -12,19 +12,6 @@ const {
     promedioResultadosTest,
     numeroMasGrande,
     multiplicarArgumentos,
-
-  devolverPrimerElemento,
-  devolverUltimoElemento,
-  obtenerLargoDelArray,
-  incrementarPorUno,
-  agregarItemAlFinalDelArray,
-  agregarItemAlComienzoDelArray,
-  dePalabrasAFrase,
-  arrayContiene,
-  agregarNumeros,
-  promedioResultadosTest,
-  numeroMasGrande,
-  multiplicarArgumentos
 } = require('../homework');
 
 describe('devolverPrimerElemento(arr)', function() {
