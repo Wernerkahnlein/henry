@@ -136,6 +136,14 @@ describe('mayorQueCincuenta(num)', function() {
   });
 });
 
+describe('obtenerResto(x, y)', function() {
+  it('Deberia devolver el resto de dividir x sobre y', function() {
+    expect(obtenerResto(15, 5)).toBe(0);
+    expect(obtenerResto(21, 5)).toBe(1);
+    expect(obtenerResto(22, 5)).toBe(2);
+  });
+});
+
 describe('esPar(num)', function() {
   it('Deberia devolver true si el numero es par sino false', function() {
     expect(esPar(6)).toBe(true);
