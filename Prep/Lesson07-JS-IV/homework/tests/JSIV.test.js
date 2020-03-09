@@ -16,12 +16,12 @@ const {
   agregarMetodoCalculoDescuento
 } = require('../homework');
 
-describe('crearGato(name, age)', function() {
-  it('should create a new cat with the name and age properties set', function() {
-    expect(crearGato('Snowball', 1).name).toBe('Snowball');
-    expect(crearGato('Snowball', 1).age).toBe(1);
-    expect(crearGato('Snowball II', 5).name).toBe('Snowball II');
-    expect(crearGato('Snowball II', 5).age).toBe(5);
+describe('crearGato(nombre, edad)', function() {
+  it('should create a new cat with the nombre and edad properties set', function() {
+    expect(crearGato('Snowball', 1).nombre).toBe('Snowball');
+    expect(crearGato('Snowball', 1).edad).toBe(1);
+    expect(crearGato('Snowball II', 5).nombre).toBe('Snowball II');
+    expect(crearGato('Snowball II', 5).edad).toBe(5);
   });
   it('should add a method called meow to the new cat object', function() {
     expect(crearGato('Snowball III', 2).meow()).toBe('Meow!');
@@ -59,10 +59,10 @@ describe('invocarMetodo(object, method)', function() {
 describe('multiplicarNumeroDesconocidoPorCinco(mysteryNumberObject)', function() {
   it('should return the mysteryNumber property multiplied by five', function() {
     const mysteryBox = {
-      mysteryNumber: 999,
+      numeroMisterioso: 999,
     };
     expect(multiplicarNumeroDesconocidoPorCinco(mysteryBox)).toBe(4995);
-    mysteryBox.mysteryNumber = -5;
+    mysteryBox.numeroMisterioso = -5;
     expect(multiplicarNumeroDesconocidoPorCinco(mysteryBox)).toBe(-25);
   });
 });
@@ -82,28 +82,28 @@ describe('eliminarPropiedad(object, property)', function() {
   });
 });
 
-describe('nuevoUsuario(name, email, password)', function() {
-  it('should return a new user object with a name, email, and password property that match the arguments', function() {
+describe('nuevoUsuario(nombre, email, password)', function() {
+  it('should return a new user object with a nombre, email, and password property that match the arguments', function() {
     const user = {
-      name: 'Jhon',
+      nombre: 'Jhon',
       email: 'jhon@email.com',
       password: 'correcthorsebatterystaple',
     };
-    expect(nuevoUsuario(user.name, user.email, user.password)).toEqual(user);
+    expect(nuevoUsuario(user.nombre, user.email, user.password)).toEqual(user);
     const user2 = {
-      name: 'Samuel',
+      nombre: 'Samuel',
       email: 'samuel@email.com',
       password: 'password',
     };
-    expect(nuevoUsuario(user2.name, user2.email, user2.password)).toEqual(user2);
+    expect(nuevoUsuario(user2.nombre, user2.email, user2.password)).toEqual(user2);
   });
 });
 
 describe('tieneEmail(user)', function() {
   it('should return true if the user object has a value for its email property', function() {
-    expect(tieneEmail({ username: 'Samuel', email: 'samuel@email.com' })).toEqual(true);
-    expect(tieneEmail({ username: 'Jhon', email: null })).toEqual(false);
-    expect(tieneEmail({ username: 'Antonio' })).toEqual(false);
+    expect(tieneEmail({ usernombre: 'Samuel', email: 'samuel@email.com' })).toEqual(true);
+    expect(tieneEmail({ usernombre: 'Jhon', email: null })).toEqual(false);
+    expect(tieneEmail({ usernombre: 'Antonio' })).toEqual(false);
   });
 });
 
@@ -145,30 +145,30 @@ describe('actualizarPassword(user, password)', function() {
 });
 
 describe('agregarAmigo(user, newFriend)', function() {
-  it('should add a new friend to the end of the friends array property', function() {
+  it('should add a new friend to the end of the amigos array property', function() {
     const user = {
-      friends: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
+      amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
     };
     const newFriend = 'Shay';
-    expect(agregarAmigo(user, 'Shay').friends.pop()).toBe('Shay');
+    expect(agregarAmigo(user, 'Shay').amigos.pop()).toBe('Shay');
   });
 });
 
 describe('pasarUsuarioAPremium(users)', function() {
-  it('should return the users array with each user\'s isPremium property set to true', function() {
+  it('should return the users array with each user\'s esPremium property set to true', function() {
     const users = [
-      { isPremium: false },
-      { isPremium: false },
-      { isPremium: false },
-      { isPremium: false },
-      { isPremium: false },
+      { esPremium: false },
+      { esPremium: false },
+      { esPremium: false },
+      { esPremium: false },
+      { esPremium: false },
     ];
     const updatedUsers = [
-      { isPremium: true },
-      { isPremium: true },
-      { isPremium: true },
-      { isPremium: true },
-      { isPremium: true },
+      { esPremium: true },
+      { esPremium: true },
+      { esPremium: true },
+      { esPremium: true },
+      { esPremium: true },
     ];
     expect(pasarUsuarioAPremium(users)).toEqual(updatedUsers);
   });
@@ -177,7 +177,7 @@ describe('pasarUsuarioAPremium(users)', function() {
 describe('sumarLikesDeUsuario(user)', function() {
   it('should return the sum of likes for all user posts', function() {
     const user = {
-      username: 'Jhon Doe',
+      usernombre: 'Jhon Doe',
       password: 'JavaScript es genial!',
       posts: [
         {
@@ -213,20 +213,20 @@ describe('sumarLikesDeUsuario(user)', function() {
 
 describe('agregarMetodoCalculoDescuento(storeItem)', function() {
   const storeItem = {
-    price: 80,
-    discountPercentage: 0.1,
+    precio: 80,
+    porcentajeDeDescuento: 0.1,
   };
   const storeItem2 = {
-    price: 5,
-    discountPercentage: 0.5,
+    precio: 5,
+    porcentajeDeDescuento: 0.5,
   };
 
-  it('should add the method \'calculateDiscountPrice\' to the store item object', function() {
-    expect(agregarMetodoCalculoDescuento(storeItem).calculateDiscountPrice).toBeDefined();
-    expect(agregarMetodoCalculoDescuento(storeItem2).calculateDiscountPrice).toBeDefined();
+  it('should add the method \'calcularPrecioDescuento\' to the store item object', function() {
+    expect(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento).toBeDefined();
+    expect(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento).toBeDefined();
   });
-  it('should return the discount price from the new \'calculateDiscountPrice\' method', function() {
-    expect(agregarMetodoCalculoDescuento(storeItem).calculateDiscountPrice()).toBe(72);
-    expect(agregarMetodoCalculoDescuento(storeItem2).calculateDiscountPrice()).toBe(2.5);
+  it('should return the discount precio from the new \'precioConDescuento\' method', function() {
+    expect(agregarMetodoCalculoDescuento(storeItem).calcularPrecioDescuento()).toBe(72);
+    expect(agregarMetodoCalculoDescuento(storeItem2).calcularPrecioDescuento()).toBe(2.5);
   });
 });
