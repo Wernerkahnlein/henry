@@ -3,31 +3,27 @@ const {
     crearUsuario,
     agregarMetodoPrototype,
     agregarStringInvertida,
-
-  crearUsuario,
-  agregarMetodoPrototype,
-  agregarStringInvertida
 } = require('../homework');
 
 describe('crearUsuario()', function() {
 	it('should return a user constructor that correctly builds user objects', function() {
 		const Usuario = crearUsuario();
-		const user = new Usuario({username: 'jssamuel', name: 'Samuel', email: 'samuel@email.com', password: 'LoveJS' });
-		expect(user.username).toBe('Samuel');
-		expect(user.name).toBe('Samuel');
+		const user = new Usuario({usuario: 'jssamuel', nombre: 'Samuel', email: 'samuel@email.com', password: 'LoveJS' });
+		expect(user.usuario).toBe('jssamuel');
+		expect(user.nombre).toBe('Samuel');
 		expect(user.email).toBe('samuel@email.com');
 		expect(user.password).toBe('LoveJS');
 	});
 });
 
 describe('agregarMetodoPrototype(Constructor)', function() {
-	it('should add the method sayHi to the constructor', function() {
+	it('should add the method saludar to the constructor', function() {
 		function Test() {
 			this.test = true;
 		}
 		agregarMetodoPrototype(Test);
 		const test = new Test();
-		expect(test.sayHi()).toBe('Hello World!');
+		expect(test.saludar()).toBe('Hello World!');
 	});
 });
 
