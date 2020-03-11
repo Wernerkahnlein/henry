@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const {
   invocarCallback,
-  sumArray,
+  sumarArray,
   forEach,
   map,
 } = require('../homework');
@@ -14,9 +14,9 @@ describe('invocarCallback(cb)', function() {
   });
 });
 
-describe('sumArray(cb)', function() {
+describe('sumarArray(cb)', function() {
 	it('should pass the sum of all array numbers to cb', function(done) {
-		sumArray([1, 2, 3, 4, 5], function(sum) {
+		sumarArray([1, 2, 3, 4, 5], function(sum) {
 			expect(sum).toBe(15);
 			done();
 		});
